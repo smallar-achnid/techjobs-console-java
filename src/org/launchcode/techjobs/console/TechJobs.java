@@ -119,8 +119,10 @@ public class TechJobs {
                 for (Object item : job.keySet()) {
                     Object jobKey = item;
 
+                    System.out.println("*****")
                     System.out.println(jobKey.toString() + ": " + job.get(jobKey));
                 }
+                System.out.println("")
                 System.out.println("*****");
             }
         }

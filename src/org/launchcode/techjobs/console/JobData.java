@@ -137,9 +137,13 @@ public class JobData {
 
         for (HashMap<String, String> row : allJobs) {
             for (String item : row.values()) {
-                //item = item.toString();
+                item = item.toLowerCase();
                 if (item.contains(searchValue)) {
-                    jobHits.add(row);
+                    jobHits.add(row);}
+
+                //System.out.println(item);
+                //System.out.println(jobHits);
+
                 }
             }
 
@@ -153,9 +157,9 @@ public class JobData {
 
                 //column++;
             }
-        }
 
-        return allSearchJobs;
+
+        return jobHits;
 
 
 
